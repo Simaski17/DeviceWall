@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <VideoView
+        android:id="@+id/surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"/>
+
+
+
+        <FrameLayout android:id="@+id/controllerAnchor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            >
+
+
+
+        </FrameLayout>
+
+
+    <FrameLayout android:id="@+id/panelimg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#FFFFFF"
+        >
+
+        <!--<com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/miimg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            fresco:actualImageScaleType="centerCrop"
+            />-->
+
+        <ImageView
+            android:id="@+id/miimgview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"/>
+
+        <Button
+            android:id="@+id/btncerrar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#f2f2f2"
+            android:text="X"
+            android:textColor="#333333"/>
+
+    </FrameLayout>
+
+
+</RelativeLayout>
